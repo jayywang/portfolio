@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jay Wang | Portfolio</title>
+
+    <link rel="stylesheet" href="mkt.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="dev.css">
+
+<body>
+
+<!-- NAVIGATION SIDE BAR -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="navtext">Home</a>
+    <a href="marketing.html" class="navtext">Marketing</a>
+    <a href="design.html" class="navtext">Design</a>
+    <a href="dev.html" class="navtext">WebDev</a>
+  </div>
+
+<span  onclick="openNav()">&#9776; </span>
+<div id="smalljw">
+<a href="index.html"><h1 class="smalljw">JW</h1></a>
+</div>
+
+
+
+<!-- DESIGN SECTION -->
+	<div id="design">
+      
+	      <h1 id="designheading">DESIGN.</h1>
+	      <div id="designrow1">
+	        <h1>Design is everywhere.</h1>
+	        <p class="designsubheading">
+	          From social media to web development, from publication to UI/UX
+	          design, from product to tiktok videos, I enjoy channeling my
+	          creativity through my versatility in design. From Photoshop to Figma, I love using different softwares for my projects.
+	        </p>
+	        <img
+	          src="https://jayywang.github.io/portfolio/img2/designskills.png"
+	          class="designskills">
+	      </div>
+
+
+
+          <div class="buttons">
+               <button type="button" >All Design</button>
+              <button type="button" data-btn="2">UI/UX</button>
+              <button type="button" data-btn="3">Digital</button>
+              <button type="button" data-btn="4">Product</button>
+          </div>
+
+        <div class="images">
+              
+              
+              <img data-img="3" src="gallery/culturenight.png">
+              <img data-img="3" src="gallery/lcabr.png">
+              <img data-img="2" src="gallery/spotifyone.png">
+              <img data-img="4" src="gallery/cng.png">
+              
+
+              <img data-img="2" src="gallery/hanger.png">
+              <img data-img="3" src="gallery/poster.png">
+              <img data-img="2" src="gallery/rubiks.png">
+              <img data-img="3" src="gallery/mhandbook.png">
+            
+
+              <img data-img="2" src="gallery/converse.png">
+              <img data-img="3" src="gallery/symmetry.png">
+              <img data-img="3" src="gallery/blackpink.png">
+             
+              <img data-img="4" src="gallery/aimlove.png">
+
+
+              <img data-img="2" src="gallery/fribble.png">
+               <img data-img="2" src="gallery/spotifytwo.png">
+              <img data-img="3" src="gallery/minime.jpg">
+              <img data-img="2" src="gallery/lauv.png">
+              
+
+              <!-- <img data-img="3" src="gallery/moonspiral.png"> -->
+              <!-- <img data-img="3" src="gallery/sunspiral.png"> -->
+
+          </div>
+    </div>
+
+
+
+
+<!-- ABOUT SECTION -->
+      <div id="aboutrow2">
+        <div>
+          <h2 class="contact">Contact Me.</h2>
+        </div>
+
+        <div class="contacticons">
+          <div>
+            <a href="mailto:jaywang@usc.edu">
+              <img
+                src="https://jayywang.github.io/portfolio/img2/envelope.png"
+                alt="linkedin"
+                class="envelope"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.linkedin.com/in/jaywang8/" target="_blank">
+              <img
+                src="https://jayywang.github.io/portfolio/img2/linkedin.png"
+                alt="linkedin"
+                class="linkedin"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+<script>
+// NAVIGATION SIDE BAR
+function openNav() {
+  	document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  	document.getElementById("mySidenav").style.width = "0";
+}
+
+
+
+
+
+// GALLERY
+const btns = document.querySelectorAll('.buttons button');
+const imgs = document.querySelectorAll('.images img');
+
+for(let i = 1; i < btns.length; i++) {
+  btns[i].addEventListener('click', filterImg);
+}
+
+function setActiveBtn(e) {
+  btns.forEach(btn => {
+    btn.classList.remove('btn-clicked');
+  });
+  e.target.classList.add('btn-clicked');
+}
+
+function filterImg(e) {
+  setActiveBtn(e);
+
+  imgs.forEach(img => {
+    img.classList.remove('img-shrink');
+    img.classList.add('img-expand');
+
+    const imgType = parseInt(img.dataset.img);
+    const btnType = parseInt(e.target.dataset.btn);
+
+    if(imgType !== btnType) {
+      img.classList.remove('img-expand');
+      img.classList.add('img-shrink');
+    }
+  });
+}
+
+btns[0].addEventListener('click', (e) =>{
+  setActiveBtn(e);
+
+  imgs.forEach(img => {
+    img.classList.remove('img-shrink');
+    img.classList.add('img-expanded');
+  });
+});
+
+
+
+ 
+
+</script>
+</body>
+<html>	

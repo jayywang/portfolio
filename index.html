@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jay Wang | Portfolio</title>
+
+    <link rel="stylesheet" href="mkt.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="dev.css">
+
+<body>
+
+<!-- NAVIGATION SIDE BAR -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html" class="navtext">Home</a>
+		<a href="marketing.html" class="navtext">Marketing</a>
+		<a href="design.html" class="navtext">Design</a>
+    <a href="dev.html" class="navtext">WebDev</a>
+	</div>
+
+<span  onclick="openNav()">&#9776; </span>
+<div id="smalljw">
+<a href="index.html"><h1 class="smalljw">JW</h1></a>
+</div>
+<div id="namediv">
+  <img class="mainname" src="logo.gif">
+  <!-- <img class="mainname" src="jaywanglogo.png"> -->
+</div>
+
+  <img class="arrow" src="img/arrow.png" alt="arrow">
+  <div id="short">
+    <p><a href="#mainselection">⌄</a></p>
+  </div>
+
+
+
+<!-- SELECT MARKETING OR DESIGN SECTION -->
+<div id="mainselection">
+    
+    <div id="marketingselection">
+      <h1 id="marketingmainpageheading">MARKETING.</h1>
+      <img class="laptopcutout" src="img/laptopcutout.png" alt="laptop cutout">
+      <button class="button"><a href="marketing.html">View Projects</a></button>
+    </div>
+
+    
+    <div id="designselection">
+      <h1 id="designmainpageheading">DESIGN.</h1>
+      <img class="phonecutout" src="img/phonecutout.png" alt="phone cutout">
+      <button class="button"><a href="design.html">View Projects</a></button>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="dev">
+      <h1 id="devheading">WEB DEV.</h1>
+      <div id="devrow1">
+          <h2>I coded this website from scratch.</h2>
+          <p class="devsubheading">
+            In addition to marketing and design, I have technical coding experience which can be seen in this portfolio website. Below I have highighted my process I took to complete my portfolio.
+          </p>
+          <img class="codingicons" src="img/coding.png" alt="codingicons">
+      </div>
+          
+      <div id="devrow2">
+        <div id="wireframe">
+          <img class="wireframe" src="img/wireframe1.png">
+          <img class="wireframe" src="img/wireframe2.png">
+          <img class="wireframe" src="img/wireframe3.png">
+        </div>
+
+        <div id="wireframetext">
+          <h1>Developing this website.</h1>
+          <p>I broke down my development into three parts: research, design, and coding. I first started by researching portfolios as inspiration for my own site. I also listed out items I wanted to include on my portfolio. I then developed a color pallete for the site and created a wire frame layout for my site, which can be seen on the left. Finally, I began to code prototypes for my site, using different softwares until I finally found one that worked best for my portfolio.</p>
+          <button class="devbutton"><a href="dev.html">Read More</a></button>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+<!-- ABOUT SECTION -->
+	<div id="about">
+      <h1 id="aboutheading">ABOUT.</h1>
+      <div id="aboutrow1">
+
+        <div id="bio">
+          <h1>Creative. Visionary. Leader.</h1>
+          <p class="bio">
+             I believe these are the
+            three key traits that make me who I am. My name is Jay Wang and I am
+            a Sophomore at the University of Southern California studying
+            Business Administration (Emphasis in Marketing) with minors in Web
+            Development and Designing for Digital Experience. I am interested in
+            both the tech and entertainment industries, specifically how they
+            intersect with marketing and design.
+          </p>
+
+          <p class="bio">
+            I am a creative at heart with an explosive imagination and a bright
+            vision for our future in technology. From analyzing the exponential
+            growth experienced on social media to dissecting the evolving
+            digital world of entertainment, I am passionate about the
+            intersectionalities of marketing and innovation in the digital
+            space. I love bringing my sense of wonder and curiosity towards the
+            projects I manage, campaigns I design, and clients I consult for.
+            Whether it’s designing products, developing strategy-based
+            consulting deliverables, or managing a team, I will always bring my
+            strong work ethic and creative, visionary leadership. </p>
+
+            <!-- <div id=buttoncontainer>
+              <button class="resumebutton"><a href="marketing.html">Resume</a></button>
+
+              <button class="resumebutton"><a href="marketing.html">LinkedIn</a></button>
+            </div>
+ -->
+
+        </div>
+
+        <div id="headshot">
+          <img
+            src="img/headshot.jpg"
+            alt="headshot"
+            class="headshot"
+          />
+        </div>
+
+      </div>
+
+      <div id="aboutrow2">
+        <div>
+          <h2 class="contact">Contact Me.</h2>
+        </div>
+
+        <div class="contacticons">
+          <div>
+            <a href="mailto:jaywang@usc.edu">
+              <img
+                src="https://jayywang.github.io/portfolio/img2/envelope.png"
+                alt="linkedin"
+                class="envelope"
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="https://www.linkedin.com/in/jaywang8/" target="_blank">
+              <img
+                src="https://jayywang.github.io/portfolio/img2/linkedin.png"
+                alt="linkedin"
+                class="linkedin"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script>
+// NAVIGATION SIDE BAR
+function openNav() {
+  	document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  	document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+</body>
+<html>	
