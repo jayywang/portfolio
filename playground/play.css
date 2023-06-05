@@ -1,0 +1,137 @@
+/* MAIN COVER */
+#topcontent {
+	display: flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: flex-start;
+	
+	width: 80%;
+	height: 700px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.leftcolumn {
+	width: 600px;
+	padding-top: 150px;
+}
+
+.leftcolumn p {
+	font-size: 28px;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+
+	line-height: 30px;
+}
+
+.leftcolumn h1 {
+	font-size: 42px;
+	margin: 0px;
+}
+
+.leftcolumn h1 {
+	font-size: 81px;
+	margin: 0px;
+
+	color: black;
+}
+
+.leftcolumn a {
+	text-decoration: none;
+}
+
+.leftcolumn h2 {
+	font-size: 48px;
+	margin: 0px;
+	line-height: 50px;
+	font-weight: 300;
+
+	clear: left;
+	font-family: 'Nunito', sans-serif;
+}
+
+.rightcolumn {
+	float: right;
+	align-self: center;
+}
+
+.mixedcube {
+	width: 375px;
+}
+
+
+/* PROJECT CONTENT */
+#projectcontent {
+	display: flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: flex-start;
+	
+	width: 80%;
+	padding-bottom: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.project {
+	width: 100%;
+    max-width: 100%;
+	height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+	border-radius: 10px;
+} 
+
+
+
+/* TWO PER ROW PROJECTS */
+.leftproject {
+	width: 600px;
+	padding-right: 1%;
+}
+
+.rightproject {
+	width: 600px;
+	padding-left: 1%;
+}
+
+
+
+/* THREE PER ROW PROJECTS */
+#projectcontent3 {
+	display: flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: flex-start;
+	
+	width: 80%;
+	padding-bottom: 1%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+.leftproject3 {
+	width: 400px;
+	padding-right: 1%;
+}
+
+.middleproject3 {
+	width: 400px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.rightproject3 {
+	width: 400px;
+	padding-left: 1%;
+}
+
+#footer {
+	padding-top: 8vh;
+}

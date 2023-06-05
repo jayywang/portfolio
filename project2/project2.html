@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jay Wang | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="project2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>    
+<body>
+
+<!-- NAVIGATION SIDE BAR -->
+<div id="navigation_side_bar">
+      
+      <div id="allofsidenav">
+          <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html#projects" class="navtext">Work</a>
+            <a href="../playground/play.html" class="navtext">Play</a>
+            <a href="../about/about.html" class="navtext">About</a>
+          </div>
+          <span  onclick="openNav()">&#9776; </span>  
+      </div>
+
+      <a href="../index.html" id="mainjw"><h1 class="smalljw">JW</h1></a>
+
+</div>
+
+
+<!-- TOP MAIN TITLE -->
+<div id="topcontent">
+    <div class="leftcolumn">
+        <p>The Ripped Bodice</p>
+        <h1>LA’s only queer-owned romance bookstore</h1>       
+    </div>
+</div>
+
+
+<!-- PART ONE -->
+  <img class="project" src="img/project2main.png" alt="project 2 main photo">
+  
+<div id="partone">
+  <div style="display: flex;">
+      <div class="problem">
+          <h1>The Problem</h1>
+      </div>
+
+      <div class="probleminfo">
+        <p>While the COVID-19 Pandemic helped usher in a new wave of Romance readers, many have stopped reading once in-person work resumed. The Ripped Bodice has been experiencing a significant decline in subscriptions for their monthly book box service. Our team worked closely with sisters and founder Leah and Bea Koch to help increase interest in their literary products. </p>
+      </div>
+  </div>
+
+</div>
+
+
+<!-- PART TWO -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Adding Styles <br> of Romance</h1>       
+  </div>
+</div>
+
+    <img class="project" src="img/trbbrandingmain.png" alt="trb branding main photo">
+
+<div id="parttwo">
+    <img class="assets" src="img/branding.png" alt="trb branding assets">
+</div>
+
+
+<!-- PART THREE -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Subscription Book <br> Box Redesign</h1>       
+  </div>
+</div>
+  
+      <img class="project" src="img/trbboxmain.png" alt="trb book box main photo">
+  
+<div id="parttwo">
+    <img class="assets" src="img/box.png" alt="trb book box assets">
+</div>
+
+
+<!-- PART FOUR -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Read. Romance. <br> Repeat. Website</h1>       
+  </div>
+</div>
+  
+      <img class="project" src="img/trbwebsitemain.png" alt="trb website main photo">
+  
+<div id="parttwo">
+    <img class="assets" src="img/website.png" alt="trb website assets">
+</div>
+
+
+<!-- PART FIVE -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Campaign <br> Pitch Deck</h1>       
+  </div>
+</div>
+  
+      <img class="project" src="img/trbdeckmain.png" alt="trb pitch deck main photo">
+  
+<div id="parttwo">
+    <img class="assets" src="img/deck.png" alt="trb pitch deck assets">
+</div>
+
+
+<!-- PART SIX -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Short-Form <br> Campaign Videos</h1>       
+  </div>
+</div>
+  
+      <img class="project" src="img/trbvideosmain.png" alt="trb video main photo">
+  
+<div id="parttwo">
+    <img class="assets" src="img/videos.png" alt="trb video assets">
+</div>
+
+
+<!-- PART SEVEN -->
+<div id="topcontent">
+  <div class="leftcolumn">
+    <h1>Romantic Comedy <br> Night Event</h1>       
+  </div>
+</div>
+  
+      <img class="project" src="img/trbeventmain.png" alt="trb event main photo">
+  
+<div id="parttwo">
+    <img class="assets" src="img/event.png" alt="trb event assets">
+</div>
+
+
+<!-- FOOTER -->
+<div id="footer">
+  <div style="display: flex;">
+    <h1>Contact Me</h1>
+    <img src="../img/minicube.png" class="minicube2">
+  </div>
+
+  <div id="contacts">
+      <a href="https://www.linkedin.com/in/jaywang8/" target="_blank"><p>LinkedIn</p></a>
+      <a href="mailto:jaywang@usc.edu" target="_blank"><p>Email</p></a>
+      <a href="https://drive.google.com/file/d/1YH1-_BQmXZq2RvCuna2erbg6jMjtucbp/view?usp=sharing" target="_blank"><P>Resume</P></a>
+  </div>
+</div>
+
+<script>
+// NAVIGATION SIDE BAR
+function openNav() {
+  	document.getElementById("sidenav").style.width = "175px";
+}
+
+function closeNav() {
+  	document.getElementById("sidenav").style.width = "0";
+}
+
+$(document).ready(function() {
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+});
+</script>
+</body>
+<html>	

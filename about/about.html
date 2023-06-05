@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jay Wang | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>    
+<body>
+
+<!-- NAVIGATION SIDE BAR -->
+<div id="navigation_side_bar">
+      <div id="allofsidenav">
+          <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html#projects" class="navtext">Work</a>
+            <a href="../playground/play.html" class="navtext">Play</a>
+            <a href="../about/about.html" class="navtext">About</a>
+          </div>
+          <span  onclick="openNav()">&#9776; </span>  
+      </div>
+
+      <a href="../index.html" id="mainjw"><h1 class="smalljw">JW</h1></a>
+
+</div>
+
+<div id="gallery">
+    <div class="slider">
+        <span style="--i:8;"><img src="img/img1.png" alt="jay image 1"></span>
+        <span style="--i:1;"><img src="img/img2.png" alt="jay image 2"></span>
+        <span style="--i:2;"><img src="img/img3.png" alt="jay image 3"></span>
+        <span style="--i:3;"><img src="img/img4.png" alt="jay image 4"></span>
+        <span style="--i:4;"><img src="img/img5.png" alt="jay image 5"></span>
+        <span style="--i:5;"><img src="img/img6.png" alt="jay image 6"></span>
+        <span style="--i:6;"><img src="img/img7.png" alt="jay image 7"></span>
+        <span style="--i:7;"><img src="img/img8.png" alt="jay image 8"></span>
+    </div>
+</div>
+
+
+<div id="topcontent">
+    <div class="leftcolumn">
+        <p>Hello, I am</p>
+        <div id="minicube">
+          <img src="../img/minicube.png" class="minicube">
+        </div>  
+        <h1>Jay Wang</h1>
+
+        <br><br>
+        <h3><strong>Skills:</strong> UI/UX Design, Web Development, Marketing Research</h3>
+        <h3><strong>Interest:</strong> Rubik's Cubes, Taylor Swift, Theme Parks, Depop</h3>
+
+        <br><br>
+        <video width="470px", height="auto" scontrols autoplay muted>
+            <source src="cubevideo.mov" type="video/mp4" class="placeholder">
+        </video>
+    </div>
+
+    <div class="rightcolumn">
+      <p>I am a digital designer and a creative at heart, integrating <strong style="color: #EC5252;"><em>business, technology & design.</em></strong> By combining analytical and design thinking with research, I hope to provide insightful business analyses with creativity in my logic.
+
+        <br><br>I believe marketing is the ultimate medium for storytelling, encompassing all parts of these disciplines. From creating campaigns for local businesses to targeting new demographics with innovative product marketing, I enjoy <strong style="color: #EC5252;"><em>strengthening connections through stories</em></strong> with individuals, businesses, and beyond.
+
+        <br><br>Design is a constant in my life because I’m <strong style="color: #EC5252;"><em>always thinking creatively</em></strong>. I love music in all forms, collecting vinyls and curating Spotify playlists. I also enjoy thrifting and expanding my own online business on Depop. Above all, I love meeting new people. Thank you for stopping by, I can't wait to share our stories!</p>
+
+        <p style="font-size: 14px; color: #00C5B9; padding-top: 5px;">↵ Wanna see why my portfolio is Rubik's Cube themed?</p>
+    </div>
+</div>
+
+
+<div id="footer">
+
+    <div style="display: flex;">
+      <h1>Contact Me</h1>
+      <img src="../img/minicube.png" class="minicube2">
+    </div>
+  
+    <div id="contacts">
+        <a href="https://www.linkedin.com/in/jaywang8/" target="_blank"><p>LinkedIn</p></a>
+        <a href="mailto:jaywang@usc.edu" target="_blank"><p>Email</p></a>
+        <a href="https://drive.google.com/file/d/1YH1-_BQmXZq2RvCuna2erbg6jMjtucbp/view?usp=sharing" target="_blank"><P>Resume</P></a>
+    </div>
+</div>
+
+
+<script>
+// NAVIGATION SIDE BAR
+function openNav() {
+  	document.getElementById("sidenav").style.width = "175px";
+}
+
+function closeNav() {
+  	document.getElementById("sidenav").style.width = "0";
+}
+
+$(document).ready(function() {
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+});
+</script>
+</body>
+<html>	

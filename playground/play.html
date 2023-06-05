@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Jay Wang | Portfolio</title>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="play.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>    
+<body>
+
+<!-- NAVIGATION SIDE BAR -->
+<div id="navigation_side_bar">
+      
+      <div id="allofsidenav">
+          <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html#projects" class="navtext">Work</a>
+            <a href="play.html" class="navtext">Play</a>
+            <a href="../about/about.html" class="navtext">About</a>
+          </div>
+          <span  onclick="openNav()">&#9776; </span>  
+      </div>
+
+      <a href="../index.html" id="mainjw"><h1 class="smalljw">JW</h1></a>
+
+</div>
+
+
+<!-- TOP MAIN TITLE -->
+<div id="topcontent">
+    <div class="leftcolumn">
+        <p>Welcome to</p>
+        <h1>Jay's Design <br> Playground</h1>
+
+        <p style="font-size: 16px; padding-top: 10px; padding-left: 3px; color: darkgray;">↳ My quick creations, experimental designs, and passion projects</p>
+
+      </div>
+
+    <div class="rightcolumn">
+      <img src="../img/mixedcube.png" alt="mixed cube" class="mixedcube">
+    </div>
+</div>
+
+
+<!-- 2 PROJECT CONTENT ROW-->
+<div id="projectcontent">
+
+  <div class="leftproject">
+    <img class="project" src="img/fitted.png" alt="fitted project">
+  </div>
+
+  <div class="rightproject">
+    <img class="project" src="img/tch.png" alt="the coaster hub project">
+  </div>
+</div>
+
+
+<!-- 3 PROJECT CONTENT ROW -->
+<div id="projectcontent3">
+
+  <div class="leftproject3">
+    <img class="project" src="img/spotify1.png" alt="spotify project">
+  </div>
+
+  <div class="middleproject3">
+    <img class="project" src="img/fribble.png" alt="fribble project">
+  </div>
+
+
+  <div class="rightproject3">
+    <img class="project" src="img/hanger.png" alt="hanger project">
+  </div>
+
+</div>
+
+<!-- 3 PROJECT CONTENT ROW -->
+<div id="projectcontent3">
+
+  <div class="leftproject3">
+    <img class="project" src="img/converse.png" alt="converse project">
+  </div>
+
+  <div class="middleproject3">
+    <img class="project" src="img/rubiks.png" alt="rubik's cube project">
+  </div>
+
+
+  <div class="rightproject3">
+    <img class="project" src="img/lauv.png" alt="lauv project">
+  </div>
+
+</div>
+
+<div id="footer">
+  <div style="display: flex;">
+    <h1>Contact Me</h1>
+    <img src="../img/minicube.png" class="minicube2">
+  </div>
+
+  <div id="contacts">
+      <a href="https://www.linkedin.com/in/jaywang8/" target="_blank"><p>LinkedIn</p></a>
+      <a href="mailto:jaywang@usc.edu" target="_blank"><p>Email</p></a>
+      <a href="https://drive.google.com/file/d/1YH1-_BQmXZq2RvCuna2erbg6jMjtucbp/view?usp=sharing" target="_blank"><P>Resume</P></a>
+  </div>
+</div>
+
+
+<script>
+// NAVIGATION SIDE BAR
+function openNav() {
+  	document.getElementById("sidenav").style.width = "175px";
+}
+
+function closeNav() {
+  	document.getElementById("sidenav").style.width = "0";
+}
+
+$(document).ready(function() {
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 800);
+        }
+    });
+});
+</script>
+</body>
+<html>	

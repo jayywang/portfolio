@@ -1,0 +1,183 @@
+/* MAIN COVER */
+#topcontent {
+	display: flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: flex-start;
+	
+	width: 80%;
+	height: 700px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.leftcolumn {
+	width: 600px;
+	padding-top: 150px;	
+}
+
+.leftcolumn p {
+	font-size: 28px;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+
+	line-height: 30px;
+}
+
+.leftcolumn h1 {
+	font-size: 81px;
+	margin: 0px;
+
+	color: black;
+}
+
+.leftcolumn a {
+	text-decoration: none;
+}
+
+.leftcolumn h2 {
+	font-size: 48px;
+	margin: 0px;
+	line-height: 50px;
+	font-weight: 300;
+
+	clear: left;
+	font-family: 'Nunito', sans-serif;
+}
+
+#minicube {
+	width: 465px;
+}
+
+.minicube {
+	float: right;
+	padding-top: 5px;
+	width: 75px;
+}
+
+.rightcolumn {
+	float: right;
+	align-self: center;
+}
+
+.bigcube {
+	width: 375px;
+}
+
+button {
+	width: 115px;
+	margin-top: 25px;
+	padding: 12px;
+	border-radius: 10px;
+	border: none;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	font-weight: 500;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+}
+
+button:hover {
+	color: #23E742;
+}
+
+
+
+/* PROJECTS */
+#projects a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-bottom: 8vw;
+}
+
+.project {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+
+/* PROJECT #1 */
+#project1{
+	width: 80%;
+	height: 80%;
+	border-radius: 20px;
+	position: relative;
+}
+
+#project1info {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  
+	color: black;
+	text-align: center;
+	line-height: 5px;
+	opacity: 0;
+	transition: opacity 1.25s;
+  
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+#project1info p {
+	font-family: 'Nunito', sans-serif;
+}
+  
+#project1:hover #project1info{
+	opacity: 100;
+	transition: opacity 1.25s;
+}
+
+
+/* PROJECT #2 */
+#project2{
+	width: 80%;
+	height: 80%;
+	border-radius: 20px;
+	position: relative;
+
+}
+
+#project2info {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  
+	color: black;
+	text-align: center;
+	line-height: 5px;
+	opacity: 0;
+	transition: opacity 1.25s;
+  
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+#project2info p {
+	font-family: 'Nunito', sans-serif;
+}
+  
+#project2:hover #project2info{
+	opacity: 100;
+	transition: opacity 1.25s;
+}
