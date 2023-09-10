@@ -122,3 +122,82 @@ html{
 	width: auto;
 	height: 50px;
 }
+
+
+/* NEXT PROJECTS */
+#nextproject {
+	display: flex;
+	position: relative;
+
+	justify-content: space-between;
+	
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.next {
+	width: 250px;
+	height: 50px;
+    margin-left: 100px;
+    margin-top: 75px;
+
+    text-align: left;
+    background-color: rgb(227, 227, 227);
+
+
+    display: flex;
+	justify-content: left;
+    padding-left: 25px;
+    padding-top: 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+.next2 {
+	width: 250px;
+	height: 50px;
+    margin-right: 100px;
+    margin-top: 75px;
+
+    text-align: right;
+    background-color: rgb(227, 227, 227);
+
+    display: flex;
+	justify-content: right;
+    padding-right: 25px;
+    padding-top: 15px;
+    border-radius: 10px;
+    color: black;
+}
+
+#nextproject a {
+    text-decoration: none;
+}
+
+.projectname {
+	font-size: 18px;
+	margin: 0px;
+}
+
+.viewnextproject {
+	font-size: 12px;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+
+	line-height: 15px;
+}
+
+.arrow, .arrow2 {
+    height: 40px;
+    padding-top: 0px;
+}
+
+.next:hover .projectname {
+	color: blueviolet;
+}
+
+.next2:hover .projectname {
+	color: blueviolet;
+}
