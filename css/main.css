@@ -10,15 +10,11 @@
 	height: 700px;
 	margin-left: 10%;
 	margin-right: 10%;
-
-	/* background-color: lightblue; */
 }
 
 .leftcolumn {
 	width: 600px;
 	padding-top: 150px;	
-
-	/* background-color: blueviolet; */
 }
 
 .leftcolumn p {
@@ -239,4 +235,49 @@ button:hover {
 #project3:hover #project3info{
 	opacity: 100;
 	transition: opacity 1.25s;
+}
+
+#funfact {
+	display: flex;
+	position: relative;
+
+	justify-content: center;
+	align-items: flex-start;
+	
+	width: 80%;
+	height: 225px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.facttext {
+	width: 850px;
+	text-align: center;
+}
+
+.facttext p {
+	font-size: 36px;
+	margin: 0px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: lighter;
+
+	line-height: 13px;
+}
+
+.facttext a {
+	text-decoration: none;
+}
+
+.facttext h2 {
+	font-size: 78px;
+	margin: 0px;
+	line-height: 80px;
+	font-weight: 300;
+
+	clear: left;
+	font-family: 'Nunito', sans-serif;
+}
+
+strong {
+	color: #00C5B9;
 }
