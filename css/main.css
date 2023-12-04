@@ -237,6 +237,48 @@ button:hover {
 	transition: opacity 1.25s;
 }
 
+
+/* PROJECT #4 */
+#project4{
+	width: 80%;
+	height: 80%;
+	border-radius: 20px;
+	position: relative;
+}
+
+#project4info {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 4px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  
+	color: black;
+	text-align: center;
+	line-height: 5px;
+	opacity: 0;
+	transition: opacity 1.25s;
+  
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+}
+
+#project4info p {
+	font-family: 'Nunito', sans-serif;
+}
+  
+#project4:hover #project4info{
+	opacity: 100;
+	transition: opacity 1.25s;
+}
+
+
 #funfact {
 	display: flex;
 	position: relative;
